@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Positioning</title>
+</head>
+<body>
+  <div class="div div1">1</div>
+  <div class="div div2">
+    <div class="div2_1">2.1</div>
+    <div class="div2_2">2.2</div>
+  </div>
+  <div class="div div3">
+    3
+    <div class="div3_1">3.1</div>
+  </div>
+</body>
+</html>
+
+
+<!--
+  position: static - свойство по умолчанию, элемент не позиционирован
+
+  position: relative - относительное позиционирование; элемент остается в базовом потоке, но его можно двигать
+    top, bottom, left, rigth
+    top, left - приоритетные
+
+    z-index - меняет порядок отображения слоев; чем выше индекс, тем "ближе" элемент к нам; 0-999, может принимать отрицательные значения
+  
+  position: absolute - абсолютное позиционирование; элемент вырывается из базового потока элементов. Применяются свойства top, bottom, left, rigth и z-index
+-->

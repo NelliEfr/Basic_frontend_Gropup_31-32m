@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.p2 {
+  width: 400px;
+  color: green;
+}
+
+.p3 {
+  border: 4px dashed black;
+  font-size: 40px;
+  padding: 0 130px;
+  margin: 100px 0;
+}
+
+.green:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.red {
+  color: red;
+}
+
+
