@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  border: 1px solid black;
+  background-color: bisque;
+  width: 200px;
+  /* height: 250px; */
+  padding: 10px;
+  margin: 10px;
+}
+
+.progress_container {
+  position: relative;
+  width: 200px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.progress_line {
+  position: absolute;
+  background-color: lightseagreen;
+  height: 100%;
+}
+
+.card1 {
+  width: 50%;
+}
+
+.card2 {
+  width: 10%;
+}
+
+.progress_value {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+
+  /* left: 45%; */
+}
+
+
+
+/* 
+.div1 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-color: lightseagreen;
+  margin: 10px;
+
+  position: relative;
+}
+
+.div3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 10px;
+}
+
+.div21 {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+
+  position: absolute;
+}
+
+.div22 {
+  width: 20px;
+  height: 20px;
+  background-color: violet;
+
+  position: absolute;
+  left: 50px;
+  top: 50px;
+} */
