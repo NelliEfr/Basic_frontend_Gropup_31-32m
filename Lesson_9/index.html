@@ -12,43 +12,61 @@
 
     <label>
       <p>Введите email:</p>
-      <input type="text" placeholder="Email">
+      <input type="text" placeholder="Email" class="inputText">
     </label>
 
     <label>
       <p>Введите пароль:</p>
-      <input type="password" placeholder="Password">
+      <input type="password" placeholder="Password" class="inputText">
     </label>
+
+    <br><br>
+    
+    <textarea></textarea>
 
     <br><br><br><br>
     <p>Что я хочу изучать?</p>
 
     <label>
-      <input type="checkbox" name="languages"> Javascript
+      <input type="checkbox" name="languages" value="javascript"> Javascript
     </label>
    
     <label>
-      <input type="checkbox" name="languages"> Python
+      <input type="checkbox" name="languages" value="python"> Python
     </label>
     
     <label>
-      <input type="checkbox" name="languages"> Java
+      <input type="checkbox" name="languages" value="java"> Java
     </label>
 
 
-    <p>На какой ОС хочу работать?</p>
+    <p>В каком городе я живу?</p>
 
     <label>
-      <input type="checkbox" name="operating_systems"> Windows
+      <input type="radio" name="cities" value="berlin"> Берлин
     </label>
    
     <label>
-      <input type="checkbox" name="operating_systems"> Mac
+      <input type="radio" name="cities" value="paris"> Париж
     </label>
     
     <label>
-      <input type="checkbox" name="operating_systems"> Ubuntu
+      <input type="radio" name="cities" value="yerevan"> Ереван
     </label>
+
+    <label>
+      <input type="radio" name="cities" value="madrid"> Мадрид
+    </label>
+
+
+    <!--
+      languages: javascript,
+      cities: berlin
+
+      type - определяет назначение инпута;
+      name - определяет к какой группе относится инпут (для работы c формой в JS);
+      value - определяет передаваемое значение (для работы c формой в JS);
+    -->
 
 
     <!-- <label for="password">Введите пароль:</label>
