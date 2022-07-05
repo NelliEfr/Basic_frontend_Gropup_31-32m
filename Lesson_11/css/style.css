@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  font-size: 24px;
+  width: 500px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 720px) {
+  .text {
+    width: 200px;
+    color: red;
+    border-color: red;
+  }
+
+  .greeting {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .text {
+    width: 200px;
+    color: orange;
+    border-color: orange;
+  }
+}
+
+@media print {
+  .text {
+    color: green;
+  }
+}
+
+
+/* @media screen and (max-width: 800px) {
+  .greeting {
+    display: none;
+  }
+} */
+
+/* 
+Условия:
+1. Тип носителя (screen, print и т.д.)
+2. Логический оператор (and, ',', not)
+3. Медиа-функция (max-width, min-width и т.д.)
+*/
