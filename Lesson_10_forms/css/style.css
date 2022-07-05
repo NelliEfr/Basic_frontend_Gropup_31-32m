@@ -53,6 +53,16 @@
   color: gray;
   font-size: 13px;
   padding-left: 10px;
+  width: 100%;
+}
+
+.form_reset_password_text {
+  margin: 15px 0;
+  color: gray;
+  font-size: 13px;
+  padding-left: 10px;
+  width: 100%;
+  text-align: end;
 }
 
 .submit_btn {
@@ -63,6 +73,9 @@
 .redirect_btn {
   background-color: white;
   border: 1px solid #CFD8DC;
+  color: black;
+  width: 300px;
+  text-align: center;
 }
 
 .form_cross {
@@ -70,4 +83,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
