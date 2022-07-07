@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid_container {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr) repeat(2, 100px) repeat(1, 3fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  /* grid-template-rows: 50% 50%; */
+}
+
+
+/* repeat(3, 1fr) repeat(2, 2fr) repeat(1, 3fr) = 1fr 1fr 1fr 2fr 2fr 3fr */
+
+.grid_item {
+  border: 1px dashed black;
+  padding: 20px;
+  text-align: center;
+}
+
+.item_1 {
+  background-color: yellow;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
