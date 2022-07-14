@@ -5,14 +5,10 @@
 
 .grid_container {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr) repeat(2, 100px) repeat(1, 3fr); */
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5px;
-  /* grid-template-rows: 50% 50%; */
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  justify-items: start;
+  align-items: end;
 }
-
-
-/* repeat(3, 1fr) repeat(2, 2fr) repeat(1, 3fr) = 1fr 1fr 1fr 2fr 2fr 3fr */
 
 .grid_item {
   border: 1px dashed black;
@@ -21,8 +17,65 @@
 }
 
 .item_1 {
+  justify-self: stretch;
+}
+
+.item_5 {
+  justify-self: center;
+}
+
+/* .item_1 {
   background-color: yellow;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+} */
+
+
+/*
+
+Что осталось:
+1. justify-content / align-content - выравнивание сетки
+2. grid-column / grid-row - расположение элементов внутри сетки
+
+*/
+
+/* ======================================== */
+
+.grid_container2{
+  display: grid;
+  /* grid-template-columns: 150px 4fr;
+  grid-template-rows: 100px 300px 100px;
+  grid-template-areas: 
+    'header header'
+    'sidebar content'
+    'footer footer'; */
+
+  grid-template: 
+  [start] 'header header' 1fr [row2]
+  [row2] 'sidebar content' 3fr [row3]
+  [row3] 'footer footer' 1fr [row-end] / 150px 1fr;
 }
 
+.header,
+.sidebar,
+.content,
+.footer {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
